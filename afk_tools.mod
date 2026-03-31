@@ -1,1 +1,1 @@
-+ afk_tools 0.0.1 D:/GitHub/afk_tools/modules/afk_tools
++ afk_tools 0.0.1 D:/Dev/afok_tools/modules/afk_tools

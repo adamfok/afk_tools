@@ -58,13 +58,13 @@ class SnippetTreeWidget(QtWidgets.QTreeWidget):
         except Exception as e:
             cmds.warning("Failed to move item: {}".format(e))
 
-class MayaSnippetTool(MayaQWidgetDockableMixin, QtWidgets.QWidget):
-    CONTROL_NAME = "MayaSnippetToolControl"
-    WINDOW_TITLE = "Maya Snippets"
-    OPTION_VAR_NAME = "MayaSnippetTool_LastDir"
+class SnippetsTool(MayaQWidgetDockableMixin, QtWidgets.QWidget):
+    CONTROL_NAME = "SnippetsToolControl"
+    WINDOW_TITLE = "Snippets Tool"
+    OPTION_VAR_NAME = "SnippetsTool_LastDir"
 
     def __init__(self, init_path=None, parent=None):
-        super(MayaSnippetTool, self).__init__(parent)
+        super(SnippetsTool, self).__init__(parent)
         self.setWindowTitle(self.WINDOW_TITLE)
         self.setObjectName(self.CONTROL_NAME) # Object name should match control name
         self.init_path = init_path
@@ -457,4 +457,4 @@ class MayaSnippetTool(MayaQWidgetDockableMixin, QtWidgets.QWidget):
         return window
 
 if __name__ == "__main__":
-    MayaSnippetTool.show_tool()
+    SnippetsTool.show_tool()
